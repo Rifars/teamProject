@@ -34,10 +34,14 @@ body {
 .card .img {
 	width: 30%;
 	height: 395px;
-	background: white;
 }
 
 .bagian2 {
 	flex-flow: row-reverse;
 	text-align: right;
+}
+/*gambar*/
+
+.bagian1 .img{
+	background-image: url("../style/img/gunungBatur.jpeg");
 }
