@@ -1,14 +1,13 @@
-*{
-	margin: 0;
-	padding: 0;
-}
+*{margin: 0;padding: 0;}
 
+/* overflow y sengaja saya nonaktifkan agar tidak bisa scrol ke kanan, jika ingin di hilangkan juga gpp */
 body {
 	font-family: arial;
 	overflow-y: none;
 	background-color: #333;
 }
 
+/*main*/
 .main {
 	width: 100%;
 	margin:50px auto;
@@ -24,24 +23,60 @@ body {
 	box-sizing: border-box;
 	margin-bottom: 50px;
 }
+.bagian2 {flex-flow: row-reverse;text-align: right;}
 
+/*bagian teks*/
 .card .teks {
 	width: 50%;
-	margin:5% 50px;
+	margin:5% 30px;
+	color: white;
+}
+.card .teks h1 {margin-bottom: 10px;}
+.card .teks p {
+	font-size: 17px;
+	line-height: 22px;
+}
+.card .teks a {
+	text-decoration: none;
 	color: white;
 }
 
+
+/*bagian gambar/img */
+/*gambarnya di kasih radius sedikit kalo enggak sreg bisa hapus aja */
 .card .img {
 	width: 30%;
 	height: 395px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
 }
+.bagian1 .img{background-image: url("../img/gunungBatur.jpeg");}
+.bagian2 .img{background-image: url("../img/gunungBromo.jpeg");}
+.bagian3 .img{background-image: url("../img/gunungRinjani.jpeg");}
 
-.bagian2 {
-	flex-flow: row-reverse;
-	text-align: right;
-}
-/*gambar*/
 
-.bagian1 .img{
-	background-image: url("../style/img/gunungBatur.jpeg");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
