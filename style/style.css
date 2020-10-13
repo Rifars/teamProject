@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: arial;
+}
+
+.container {width: 100%}
+
+.main {
+	width: 100%;
+	border:1px solid #333;
+	margin: 70px 0;
+}
+
+.cards .card {
+	display: flex;
+	height: 350px;
+}
+.card .teks{
+	background-color: skyblue;
+	order: 1;
+	width: 300px;
+}
+.card .img {
+	width: 300px;
+	background-color: #aeaeae;
+	order: 2;
+}
