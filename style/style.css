@@ -1,5 +1,13 @@
+/*tinngal ubah warna dari teks nya aja kak di bagian teks */
 *{margin: 0;padding: 0;}
-
+@font-face {
+	font-family:'Homestead-Display' ;
+	src: url("../font/Homestead-Display.ttf");
+}
+@font-face{
+	font-family: 'BLANCH_CAPS';
+	src:url("../font/BLANCH_CAPS.otf");
+}
 /* overflow y sengaja saya nonaktifkan agar tidak bisa scrol ke kanan, jika ingin di hilangkan juga gpp */
 body {
 	font-family: arial;
@@ -10,32 +18,52 @@ body {
 /*main*/
 .main {
 	width: 100%;
-	margin:50px auto;
+	margin:30px auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
+/*bagiain pembungkun dari img dan teks */
 .card {
 	display: flex;
 	width: 80%;
 	padding: 20px;
 	box-sizing: border-box;
 	margin-bottom: 50px;
+	position: relative;
+	fle
 }
 .bagian2 {flex-flow: row-reverse;text-align: right;}
 
 /*bagian teks*/
 .card .teks {
 	width: 50%;
-	margin:5% 30px;
+	margin:0 30px;
 	color: white;
+	align-self: flex-end;
+	padding-bottom: 15px;
 }
-.card .teks h1 {margin-bottom: 10px;}
+
+/*Teks header */
+.card .teks h1 {
+	margin-bottom: 10px;
+	font-family: 'Homestead-Display';
+	letter-spacing: 3px;
+	font-size: 35px;
+}
+
+/*teks deskripsi*/
 .card .teks p {
-	font-size: 17px;
 	line-height: 22px;
+	margin-bottom:10px ; 
 }
+
+.teks p, .teks a {
+	font-size: 27px;
+	font-family: 'BLANCH_CAPS';
+}
+/*yang readmore*/
+/*untuk animasinya juga bisa di tempelin disini*/
 .card .teks a {
 	text-decoration: none;
 	color: white;
@@ -51,6 +79,7 @@ body {
 	background-position: center;
 	border-radius: 10px;
 }
+/*bagian import gambar*/
 .bagian1 .img{background-image: url("../img/gunungBatur.jpeg");}
 .bagian2 .img{background-image: url("../img/gunungBromo.jpeg");}
 .bagian3 .img{background-image: url("../img/gunungRinjani.jpeg");}
